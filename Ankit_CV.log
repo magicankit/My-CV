@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6880 64-bit) (preloaded format=xelatex 2018.11.26)  26 NOV 2018 21:08
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6880 64-bit) (preloaded format=xelatex 2018.11.26)  27 NOV 2018 17:23
 entering extended mode
 **./Ankit_CV.tex
 (Ankit_CV.tex
@@ -596,95 +596,102 @@ Package: geometry 2018/04/16 v5.8 Page Geometry
 \Gm@dimlist=\toks24
 
 ("C:\Program Files\MiKTeX 2.9\tex\xelatex\xetexconfig\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\bookmark.sty"
+Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\bkm-dvipdfm.def"
+File: bkm-dvipdfm.def 2016/05/17 v1.26 bookmark driver for dvipdfm (HO)
+\BKM@id=\count277
+))
 (Ankit_CV.aux)
 \openout1 = `Ankit_CV.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 108.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 108.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 111.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 111.
 
 (C:\Users\ankit.arora\AppData\Roaming\MiKTeX\2.9\tex\latex\tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 108.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 108.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 108.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 108.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 108.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 108.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 108.
-LaTeX Font Info:    Redeclaring math accent \check on input line 108.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 108.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 108.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 108.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 108.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 108.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 108.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 108.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 108.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 108.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 108.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 108.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 108.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 108.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 108.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 108.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 108.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 108.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 111.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 111.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 111.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 111.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 111.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 111.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 111.
+LaTeX Font Info:    Redeclaring math accent \check on input line 111.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 111.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 111.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 111.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 111.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 111.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 111.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 111.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 111.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 111.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 111.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 111.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 111.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 111.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 111.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 111.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 111.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 111.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 108.
+(Font)              `operators' in the math version `normal' on input line 111.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Fontin(0)/m/n on input line 108.
+(Font)                  OT1/cmr/m/n --> TU/Fontin(0)/m/n on input line 111.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 108.
+(Font)              `operators' in the math version `bold' on input line 111.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Fontin(0)/m/n on input line 108.
+(Font)                  OT1/cmr/bx/n --> TU/Fontin(0)/m/n on input line 111.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Fontin(0)/m/n --> TU/Fontin(0)/m/n on input line 108
+(Font)                  TU/Fontin(0)/m/n --> TU/Fontin(0)/m/n on input line 111
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Fontin(0)/m/it on input line 108.
+(Font)                  OT1/cmr/m/it --> TU/Fontin(0)/m/it on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Fontin(0)/bx/n on input line 108.
+(Font)                  OT1/cmr/bx/n --> TU/Fontin(0)/bx/n on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 108.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 108.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 111.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Fontin(0)/m/n --> TU/Fontin(0)/bx/n on input line 10
-8.
+(Font)                  TU/Fontin(0)/m/n --> TU/Fontin(0)/bx/n on input line 11
+1.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Fontin(0)/bx/it on input line 108.
+(Font)                  OT1/cmr/bx/it --> TU/Fontin(0)/bx/it on input line 111.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 108.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 108.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 111.
 
 
 Package scrpage2 Warning: seems you are using a constant headheight.
@@ -695,23 +702,18 @@ Package scrpage2 Warning: seems you are using a constant headheight.
 (scrpage2)                A better solution would be to use typearea package.
 
 \AtBeginShipoutBox=\box76
-Package hyperref Info: Link coloring ON on input line 108.
+Package hyperref Info: Link coloring ON on input line 111.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count277
+\c@section@level=\count278
 )
-LaTeX Info: Redefining \ref on input line 108.
-LaTeX Info: Redefining \pageref on input line 108.
-LaTeX Info: Redefining \nameref on input line 108.
-
-(Ankit_CV.out) (Ankit_CV.out)
-\@outlinefile=\write3
-\openout3 = `Ankit_CV.out'.
-
+LaTeX Info: Redefining \ref on input line 111.
+LaTeX Info: Redefining \pageref on input line 111.
+LaTeX Info: Redefining \nameref on input line 111.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -747,9 +749,9 @@ LaTeX Info: Redefining \nameref on input line 108.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 119.
+(Font)              <7> on input line 122.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 119.
+(Font)              <5> on input line 122.
 
 Package fontspec Info: Font "Fontin" does not contain any OpenType `Script'
 (fontspec)             information.
@@ -783,12 +785,12 @@ Package fontspec Info: Font family 'Fontin(1)' created for font 'Fontin' with
 (fontspec)             SmallCaps/OT:letterspace=20.0;mapping=tex-text;"
 
 
-Overfull \vbox (30.22003pt too high) detected at line 128
+Overfull \vbox (18.22003pt too high) detected at line 131
  []
 
-LaTeX Font Info:    Try loading font information for U+mvs on input line 130.
+LaTeX Font Info:    Try loading font information for U+mvs on input line 133.
 (C:\Users\ankit.arora\AppData\Roaming\MiKTeX\2.9\tex\latex\marvosym\umvs.fd)
-Overfull \hbox (39.36292pt too wide) in paragraph at lines 119--136
+Overfull \hbox (39.36292pt too wide) in paragraph at lines 122--139
 [][]
  []
 
@@ -797,88 +799,88 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 189.
+(Font)              <9> on input line 192.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 189.
+(Font)              <6> on input line 192.
 
-Overfull \hbox (36.51373pt too wide) in paragraph at lines 189--191
+Overfull \hbox (36.51373pt too wide) in paragraph at lines 192--194
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--191
+Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
  []
 
 
-Overfull \hbox (13.19095pt too wide) in paragraph at lines 257--258
+Overfull \hbox (13.19095pt too wide) in paragraph at lines 262--263
 [][] 
  []
 
 
-Overfull \hbox (1.64098pt too wide) in paragraph at lines 257--258
+Overfull \hbox (1.64098pt too wide) in paragraph at lines 262--263
 []
  []
 
 
-Overfull \hbox (13.19095pt too wide) in paragraph at lines 269--270
+Overfull \hbox (13.19095pt too wide) in paragraph at lines 280--281
 [][] 
  []
 
 
-Overfull \hbox (1.64098pt too wide) in paragraph at lines 269--270
+Overfull \hbox (1.64098pt too wide) in paragraph at lines 280--281
 []
  []
 
 
-Overfull \hbox (13.19095pt too wide) in paragraph at lines 294--295
+Overfull \hbox (13.19095pt too wide) in paragraph at lines 296--297
 [][] 
  []
 
 
-Overfull \hbox (1.64098pt too wide) in paragraph at lines 294--295
+Overfull \hbox (1.64098pt too wide) in paragraph at lines 296--297
 []
  []
 
 
-Overfull \hbox (13.19095pt too wide) in paragraph at lines 308--309
+Overfull \hbox (13.19095pt too wide) in paragraph at lines 316--317
 [][] 
  []
 
 
-Overfull \hbox (1.64098pt too wide) in paragraph at lines 308--309
+Overfull \hbox (1.64098pt too wide) in paragraph at lines 316--317
 []
  []
 
 
-Overfull \hbox (13.19095pt too wide) in paragraph at lines 323--324
+Overfull \hbox (13.19095pt too wide) in paragraph at lines 334--335
 [][] 
  []
 
 
-Overfull \hbox (1.64098pt too wide) in paragraph at lines 323--324
-[]
- []
-
-
-Overfull \hbox (13.19095pt too wide) in paragraph at lines 362--363
-[][] 
- []
-
-
-Overfull \hbox (1.64098pt too wide) in paragraph at lines 362--363
+Overfull \hbox (1.64098pt too wide) in paragraph at lines 334--335
 []
  []
 
 [1
 
 ]
-Overfull \hbox (13.19095pt too wide) in paragraph at lines 376--377
+Overfull \hbox (13.19095pt too wide) in paragraph at lines 361--362
 [][] 
  []
 
 
-Overfull \hbox (1.64098pt too wide) in paragraph at lines 376--377
+Overfull \hbox (1.64098pt too wide) in paragraph at lines 361--362
+[]
+ []
+
+
+Overfull \hbox (13.19095pt too wide) in paragraph at lines 375--376
+[][] 
+ []
+
+
+Overfull \hbox (1.64098pt too wide) in paragraph at lines 375--376
 []
  []
 
@@ -893,64 +895,22 @@ Overfull \hbox (1.64098pt too wide) in paragraph at lines 390--391
  []
 
 
-Overfull \hbox (13.19095pt too wide) in paragraph at lines 405--406
-[][] 
- []
-
-
-Overfull \hbox (1.64098pt too wide) in paragraph at lines 405--406
-[]
- []
-
-
-Overfull \hbox (0.49545pt too wide) in paragraph at lines 415--431
+Overfull \hbox (0.49545pt too wide) in paragraph at lines 482--498
 [][]  
  []
 
-
-Overfull \hbox (2.20284pt too wide) in paragraph at lines 443--444
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 443--444
-
- []
-
-
-Overfull \hbox (13.19095pt too wide) in paragraph at lines 529--530
-[][] 
- []
-
-
-Overfull \hbox (1.64098pt too wide) in paragraph at lines 529--530
-[]
- []
-
-
-Overfull \hbox (13.19095pt too wide) in paragraph at lines 541--542
-[][] 
- []
-
-
-Overfull \hbox (1.64098pt too wide) in paragraph at lines 541--542
-[]
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 568.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 635.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 568.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 635.
  (Ankit_CV.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 568.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 568.
-Package rerunfilecheck Info: File `Ankit_CV.out' has not changed.
-(rerunfilecheck)             Checksum: 2D9325978C9D6537B46A2FD5D5AE9C9B.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 635.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 635.
  ) 
 Here is how much of TeX's memory you used:
- 24297 strings out of 427792
- 432769 string characters out of 3151723
- 530218 words of memory out of 3000000
- 28164 multiletter control sequences out of 15000+200000
+ 24505 strings out of 427792
+ 435984 string characters out of 3151723
+ 534991 words of memory out of 3000000
+ 28371 multiletter control sequences out of 15000+200000
  535102 words of font info for 52 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  39i,11n,71p,1199b,443s stack positions out of 5000i,500n,10000p,200000b,50000s

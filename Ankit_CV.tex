@@ -1,0 +1,635 @@
+
+ \documentclass[a4paper]{article} % Default font size and paper size
+% \documentclass[draft]{article} % Default font size and paper size
+
+
+%----------------------------------------------------------------------------------------
+% STYLING
+%----------------------------------------------------------------------------------------
+% FONTS
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+% HEADERS
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+\usepackage{scrpage2} % Provides headers and footers configuration
+
+% HYPERREFS
+\usepackage{hyperref} % Required for adding links	and customizing them
+%\usepackage[usenames]{xcolor} % Required for specifying custom colours
+%\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colours
+\usepackage{color}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link colour
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colours throughout the document
+
+% TABLES
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{array} % Custom arrangement for the columns
+\usepackage{multirow} %rows spanning multiple rows
+\usepackage{multicol}
+\setlength{\columnseprule}{0.5pt}
+
+% SECTIONS
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{1pt}{2pt} % Spacing around sections
+
+% LISTS
+\usepackage{enumitem} % For left margin removal in itemize
+
+% SYMBOLS
+\usepackage{marvosym} % Allows the use of symbols
+
+% PAGE GEOMETRY
+\usepackage[top=1.0cm, bottom=1.5cm, lmargin=1.0cm, rmargin=1.8cm,ignoreheadfoot]{geometry} % The page Geometry
+
+% BOOKMARK
+\usepackage{bookmark}
+
+%----------------------------------------------------------------------------------------
+% CUSTOM ENVIRONMENTS
+%----------------------------------------------------------------------------------------
+\newcommand{\verticalspacing}{-0.25cm}
+\newcommand{\headspace}{-0.3cm}
+\newcommand{\bulletspace}{0.7cm}
+\newcommand{\projectheadspacing}{6.9cm}
+
+\newcommand{\highlight}[2]{%
+    \begin{tabular}{p{2.4cm}|l}
+        \textsc {\large #1} & #2
+    \end{tabular}
+}
+
+\newcommand{\cproject}[5]{%
+    \begin{tabular}{p{0.60\linewidth}r}
+        \textcolor{blue}{\small #2} & \multicolumn{1}{m{ \projectheadspacing{} }}{\raggedleft \small {\textsc{#1}}}\\
+        \small {#3} & \small {#4}
+    \end{tabular}\\
+    \begin{tabular}{p{0.98\linewidth}}
+    \vspace{-0.3cm}
+        \small{#5}
+    \end{tabular}
+    \vspace{\verticalspacing{}}
+}
+
+%\newcommand{\gitproject}[3]{%
+%    \begin{tabular}{p{0.60\linewidth}r}
+%        \textcolor{blue}{\small #2} & \multicolumn{1}{m{ \projectheadspacing{} }}{\raggedleft #1}\\
+%    \end{tabular}\\
+%    \begin{tabular}{p{0.98\linewidth}}
+%        \vspace{\headspace{}}
+%        \small{#3}
+%    \end{tabular}
+%    \vspace{\verticalspacing{}}
+%    \vspace{-0.2cm} % Needed for proper spacing
+%}
+
+\newcommand{\itemlist}[1]{%
+    \def\arraystretch{1.2}
+    \begin{tabular}{>{\raggedleft}p{1.6cm}p{0.87\linewidth}}
+        #1
+    \end{tabular}
+    \def\arraystretch{1.0}
+}
+
+\newcommand{\skill}[2]{%
+    \begin{tabular}{p{0.60\linewidth}r}
+        \small {#2} & \multicolumn{1}{m{ \projectheadspacing{} }}{\raggedleft \textsc{\small #1}}\\
+    \end{tabular}
+    \vspace{\verticalspacing{}}
+}
+
+% \newcommand{\github}{%
+% \includegraphics[height=9pt]{icons/octa.png}
+% }
+
+%----------------------------------------------------------------------------------------
+% DOCUMENT BEGINS HERE
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% \font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+%----------------------------------------------------------------------------------------
+% HEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{%
+    \begin{tabular}{rp{6cm}l}
+        \multirow{3}{0.70\linewidth}{%
+            \vfil
+            {%
+                \addfontfeature{LetterSpace=20.0}\fontsize{20}{20}\selectfont\scshape
+                ANKIT ARORA
+            }\\
+            \emph{Seeking senior level assignments in Software Testing \\
+                   / IT with a growth oriented organization}
+        }
+
+        & {\Large\Letter} {\href{mailto:ankitarora084@gmail.com}{ankitarora084@gmail.com}}\\
+ %       & {\github} {\href{https://github.com/magicankit}{@magicankit}}\\
+        & {\Large\Mundus} {\href{https://www.linkedin.com/in/ankit-arora-7557a434/}{Linkedin}}\\
+        & {M-} {9654293205}\\
+    \end{tabular}
+    \vspace{-0.5cm}
+    \section{}
+}
+
+%----------------------------------------------------------------------------------------
+%   GLOBAL OPTIONS
+%----------------------------------------------------------------------------------------
+\vspace{0.1cm}
+\small
+
+%----------------------------------------------------------------------------------------
+%   SKILL SET
+%----------------------------------------------------------------------------------------
+%\highlight
+%    {Skill Set}
+%    {%
+%        \itemlist {%
+%                \textsc{\small Languages} %
+%                & \textbf{JavaScript} (Expert), \textbf{Java} (Proficient), \textbf{Python} (Proficient),
+%                  \textbf{C/C++} (Intermediate), \textbf{}\\
+%                \textsc{\small Web Dev} %
+%                & \textbf{HTML5}, \textbf{CSS}, \textbf{SQL and NoSQL}, \textbf{React}, \textbf{Nodejs}\\
+%                \textsc{\small Tools} %
+%                & \textbf{Git} (Expert), \textbf{Shell Scripting} (Proficient), \textbf{Vim} (Expert),
+%                \textbf{LaTeX} (Proficient)\\
+%            }
+%    }
+
+
+\begin{multicols}{2}
+\section{Skill Set}
+    {%
+        \itemlist {%
+                \textsc{\small Testing Concepts} %
+                & \textbf{Sanity}, \textbf{Smoke}, \textbf{Mobile Apps Testing} \\
+
+                \textsc{\small Bug Reporting Tools} %
+                & \textbf{JIRA}\\
+
+                \textsc{\small Build verification Tool} %
+                & \textbf{Jenkins} \\ 
+                
+                \textsc{\small Packages} %
+                & \textbf{MS-Office}\\
+
+	     \textsc{\small Operating Systems} %
+                & \textbf{Windows} , \textbf{Unix}\\
+
+	     \textsc{\small Network Capture} %
+                & \textbf{Charles Proxy} \\
+
+                
+                \textsc{\small } %
+                
+            }
+    }
+ 
+% \columnbreak
+ 
+%\section{Awards and Achievements}
+
+%{%
+%        \itemlist {%
+%                \textsc{\small 1. } %
+%                & {\href{https://www.coursera.org/account/accomplishments/certificate/BKFTEPR83L8Y} {Data Management and %Visualization (Python)} : \textbf{93.5\%}}  \\
+
+%                \textsc{\small 2. } %
+%                & {\href{https://www.coursera.org/account/accomplishments/certificate/EM29BAUXMCVT} {Data Analysis Tools} : %\textbf{93.5\%}}  \\
+
+%                \textsc{\small 3. } %
+%                & {\href{https://www.coursera.org/account/accomplishments/certificate/QNG3Q8RJRZUX} {Regression Modeling in %Practice} : \textbf{98.8\%}}  \\
+                
+ %               \textsc{\small 4. } %
+%                & {\href{https://www.coursera.org/account/accomplishments/certificate/HAKPGPJLA3ST} {Machine Learning for Data % Analysis} : \textbf{93.5\%}}  \\
+                
+%            }
+%    }
+
+\end{multicols}
+%----------------------------------------------------------------------------------------
+%   RELEVANT COURSES
+%----------------------------------------------------------------------------------------
+% \highlight
+%     {Courses}
+%     {\small
+%         \begin{tabular}{p{16.5cm}}
+%                 Operating Systems, Computer and Internet Security, Networks,
+%                 Compilers, Principles of Programming Languages, Computer Organization,
+%                 Computing Lab I \& II, Algorithms I \& II\\
+%
+%         \end{tabular}
+%     }
+%
+
+
+
+%----------------------------------------------------------------------------------------
+%	TEACHING
+%----------------------------------------------------------------------------------------
+
+% \section{Teaching}
+
+%----------------------------------------------------------------------------------------
+%   WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+%
+\section{Work Experience}
+
+\cproject
+      {June 2018 - Present}
+      {Sr. QC Analyst}
+      {\textsc{TIMES INTERNET Ltd }, Noida}
+      {}
+      {%
+        \begin{itemize}[leftmargin=\bulletspace{}]
+          \item Working on various Mobile Apps as well as Desktop Apps.
+          % \item Analyzed various unwind and RENTD strategies for pro-active risk management, according
+          %       to the alpha profile of flow.
+          \item Successfull released Projects like GadgetsNow, ETimes for Web as well as MobileWeb
+          \item Responsible for Writing Test cases using Zephyr, execute and Bug logging
+          \item Performed End to End Testing for Shopping site including Order flow till order delivery
+	    \item Communicate with Client over Mails/Calls in case of any queries/Suggestions related to Product
+          \item Use JIRA to capture Bugs or report teh status of Project including all activities 
+        \end{itemize}
+}
+
+\cproject
+      {Apr 2016 - Jun 2018}
+      {Sr. Test Engineer(Consultant)}
+      {\textsc{Infogain India Pvt Ltd }, Noida}
+      {}
+      {%
+        \begin{itemize}[leftmargin=\bulletspace{}]
+        \item Working on various Mobile Apps as well as Desktop Apps.
+          % \item Analyzed various unwind and RENTD strategies for pro-active risk management, according
+          %       to the alpha profile of flow.
+          \item Successfull released Projects like GadgetsNow, ETimes for Web as well as MobileWeb
+          \item Responsible for Writing Test cases using Zephyr, execute and Bug logging
+          \item Performed End to End Testing for Shopping site including Order flow including Order delivery, Order Cancelled etc
+	    \item Communicate with Client over Mails/Calls in case of any queries/Suggestions related to Product
+          \item Use JIRA to capture Buhs or report teh status of Project including all activities
+        \end{itemize}
+  } 
+
+\cproject
+      {Nov 2015 - Apr 2016}
+      {Test Engineer - II}
+      {\textsc{Infomatrix Software Pvt Ltd }, Noida}
+      {}
+      {%
+        \begin{itemize}[leftmargin=\bulletspace{}]
+        \item Perform Manual Testing for the E-commerce Project as GEC
+          % \item Analyzed various unwind and RENTD strategies for pro-active risk management, according
+          %       to the alpha profile of flow.
+         \item Communicate with Client over Mails/Calls in case of any queries/Suggestions related to Product
+          \item Use JIRA to capture Bugs or report teh status of Project including all activities
+          \item Use Zephyr tool to Create Test Cases
+        \end{itemize}
+  } 
+
+
+\cproject
+      {Oct 2013 - Nov 2015}
+      {Test Engineer}
+      {\textsc{IMagic Software India Pvt Ltd }, Noida}
+      {}
+      {%
+        \begin{itemize}[leftmargin=\bulletspace{}]
+        \item Working on various Mobile Apps for iOS/Android like HMH Reader , Curious George, MAAP
+          % \item Analyzed various unwind and RENTD strategies for pro-active risk management, according
+          %       to the alpha profile of flow.
+          \item Performed Various Mobile Apps Testing including downloading builds from server through FTP
+          \item Responsible for Writing Test cases using Zephyr, execute and Bug logging
+          \item Installation of Mobile build across various Mobile devices includng Tablets
+	    \item Communicate with Client over Mails/Calls in case of any queries/Suggestions related to Product
+          \item Use JIRA to capture Bugs or report teh status of Project including all activities
+          \item Performed Functional,Usability,Regression, Interrupts Testing
+        \end{itemize}
+  } 
+
+\cproject
+      {Oct 2010 - Jan 2013}
+      {Core Engineer}
+      {\textsc{NR Switches n Radio Services }, Noida}
+      {}
+      {%
+        \begin{itemize}[leftmargin=\bulletspace{}]
+        \item Experience in ATCAV2 platform Alcatel-Lucent Switches (SDM-HLR)
+          % \item Analyzed various unwind and RENTD strategies for pro-active risk management, according
+          %       to the alpha profile of flow.
+          \item Successfull released Projects like GadgetsNow, ETimes for Web as well as MobileWeb
+          \item Responsible for Writing Test cases using Zephyr, execute and Bug logging
+          \item Performed End to End Testing for Shopping site including Order flow including Order delivery, Order Cancelled etc
+	    \item Communicate with Client over Mails/Calls in case of any queries/Suggestions related to Product
+          \item Use JIRA to capture Buhs or report teh status of Project including all activities
+        \end{itemize}
+  } 
+
+
+
+
+%----------------------------------------------------------------------------------------
+%  PROJECTS
+%----------------------------------------------------------------------------------------
+%\vspace{-0.65cm}
+%\let\thefootnote\relax\footnote{ }
+%\let\thefootnote\relax\footnote{ }
+\section{Open Source Projects}
+
+\cproject
+    {Jan 2017 - March 2017}
+    {Exploratory Data Analysis}
+    {\textsc{\raggedright Data Analysis, Coursera}}
+    {\href{https://github.com/er-ashish01/Data_Management_and_Visualization} {[GitHub]} \href{https://erashish01.tumblr.com/post/156297127705/data-management-and-visualization-week4} {[Blog]}}
+    {%
+        \begin{itemize}[leftmargin=\bulletspace{}]
+            \item Worked on Gapminder data set for different countries.
+            \item Used Python pandas, numpy, seaborn and mathplotlib libraries to analyze and visualize data.
+            \item Managed variables provided in the {\href{https://drive.google.com/file/d/1j3MM8wHSikaf8cCef9hhe9VKhs-VYW6b/view} {Gapminder}} dataset.
+            \item Plotted \textbf{scatterplot, Histogram and bar graph} for univariate analysis of variables of interest.
+            \item Tried to predict the relation between variables of interest visually based on plotted graphs.
+
+        \end{itemize}
+    }
+
+\cproject
+    {April 2017 - July 2017}
+    {Correlation between Urban Rate, CO2Emission and Life Expectancy}
+    {\textsc{\raggedright Machine Learning, Coursera}}
+    {\href{https://github.com/er-ashish01/Basics_of_Linear_Regression} {[GitHub]} \href{https://erashish01.tumblr.com/post/161823663110/basic-linear-regression-model-week-3} {[Blog]}}
+    {%
+        \begin{itemize}[leftmargin=\bulletspace{}]
+            \item Created different Regression Models : Linear, Multiple and Polynomial
+            \item Polynomial Regression predicted the most accurate association between Life Expectancy and Income per person.
+            \item Analyzed values of \textbf{p, r and r$^{2}$}
+            \item Tested the regression model using Q-Q Graph, Residuals plot between variables of interest.
+        \end{itemize}
+    }
+
+
+\cproject
+    {Aug 2017 - Oct 2017}
+    {Dominant Color of an Image}
+    {\textsc{\raggedright Image Processing, Coursera}}
+    {\href{https://github.com/er-ashish01/Digit-Recognition} {[GitHub]}}
+    {%
+        \begin{itemize}[leftmargin=\bulletspace{}]
+            \item Used \textbf{K Means Clustering} algorithm to find the most dominating color of an imgage.
+            \item The k-means algorithm assigns each pixel in our image to the closest cluster
+            \item Used \textbf{OpenCV} library for Image processing.
+            \item Used matplotlib to display images and most dominant colors.
+        \end{itemize}
+    }
+
+
+%\cproject
+%    {Oct 2017 - Dec 2017}
+%    {Handwritten Digit Recognition}
+%    {\textsc{\raggedright Image Processing, Coursera}}
+%    {\href{https://github.com/er-ashish01/Digit-Recognition} {[GitHub]}}
+%    {%
+%        \begin{itemize}[leftmargin=\bulletspace{}]
+%            \item Used Neural Network algorithm to predict the handwritten digit.
+%            \item Used Tensorflow deep learning library in Python.
+%            \item The data set used to train and test our model was {\href{http://yann.lecun.com/exdb/mnist/} {MNIST}} data set.
+%            \item Achieved Validation Accuracy of 0.95.
+%            %     collocations; there was no appreciable difference in the results with the F-scores increasing only
+%            %     marginally.
+%            % \item Presented a poster on Opinion Word Expansion and Target Extraction through Double Propogation, Guang Qin,
+%            %     Bing Liu, Jiajun Bu, Chun Chen that was nominated as the best poster by all students.
+%        \end{itemize}
+%    }
+
+
+
+%----------------------------------------------------------------------------------------
+%  CERTIFICATES
+%----------------------------------------------------------------------------------------
+% \section{Certificates}
+%
+%\cproject
+%    {Dec 2016 - Jan 2017}
+%    {Data Management and Visualization (Python)}
+%    {\textsc{\raggedright Data Analysis, Coursera}}
+%    {\href{https://www.coursera.org/account/accomplishments/certificate/BKFTEPR83L8Y} {[Link]}}
+%    {%
+%        \begin{itemize}[leftmargin=\bulletspace{}]
+%            \item Cleared the course with 93.5\%
+%            \item Learnt Exploratory Data Analysis using Python \textbf{pandas, numpy, seaborn and mathplotlib} libraries.
+%            \item Learnt to manage the variables of interest and visualize them.
+%        \end{itemize}
+%    }
+%
+%\cproject
+%    {Feb 2017 - April 2017}
+%    {Data Analysis Tools}
+%    {\textsc{\raggedright Statistics, Coursera}}
+%    {\href{https://www.coursera.org/account/accomplishments/certificate/EM29BAUXMCVT} {[Link]}}
+%    {%
+%        \begin{itemize}[leftmargin=\bulletspace{}]
+%            \item Cleared the course with 95\%
+%            \item Testing the hypothesis using \textbf{ANOVA}, \textbf{Chi Square} Test of Independence and \textbf{Pearson Correlation}.
+%            \item Learnt about moderation and tested \textbf{moderation} in our variables of interest by adding a new variable.
+%            \item Checked for Moderation of Income Per Person between Urban Rate and Life Expectancy.
+%        \end{itemize}
+%    }
+%
+%\cproject
+%    {May 2017 - July 2017}
+%    {Regression Modeling in Practice}
+%    {\textsc{\raggedright Analytics, Coursera}}
+%    {\href{https://www.coursera.org/account/accomplishments/certificate/QNG3Q8RJRZUX} {[Link]}}
+%    {%
+%        \begin{itemize}[leftmargin=\bulletspace{}]
+%            \item Cleared the course with 98.8\%
+%            \item Learnt about Regression Models : \textbf{Linear, Multiple, Polynomial and Logistic}.
+%            \item Used statsmodels.formula.api python library to run all models.
+%            \item Learnt about \textbf{confounding variables} and how to handle them.
+%        \end{itemize}
+%    }
+%
+%\cproject
+%    {Aug 2017 - Sept 2017}
+%    {Machine Learning for Data Analysis}
+%    {\textsc{\raggedright Machine Learning, Coursera}}
+%    {\href{https://www.coursera.org/account/accomplishments/certificate/HAKPGPJLA3ST} {[Link]}}
+%    {%
+%        \begin{itemize}[leftmargin=\bulletspace{}]
+%            \item Cleared the course with 100\%
+%            \item Used \textbf{sklearn} library to run Machine learning algorithms.
+%            \item Learnt \textbf{Decision Tree, Random Forest}, Lasso Regression and \textbf{K-Means Clustering} algorithms implementation.
+%            \item Learnt about \textbf{Bias Variance} trade-off and finding the best fit.
+%            \item Learnt about Validation and Cross-Validation approaches to test/test the model.
+%        \end{itemize}
+%    }
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\def\arraystretch{1.2}
+\begin{tabular}{>{\raggedleft}p{1.5cm}p{14.6cm}r}
+
+    \textsc{May 2010} & B.TECH, \textsc{Electronics And Communication},
+    \textbf{ACET, Punjab Technical University}, Amritsar
+    & \textbf{74.5}\%\\
+
+    \textsc{Mar 2006} & 12$^{th}$ Board, \textsc{CBSE} Board,
+    \textbf{D.A.V. Sr. Sec School,}, Amritsar
+    & \textbf{75}\% \\
+
+    \textsc{Mar 2004} & 10$^{th}$ Board, \textsc{CBSE} Board,
+    \textbf{Shri Ram Ashram Sr. Sec School}, Amritsar
+    & \textbf{85}\% \\
+
+\end{tabular}
+\def\arraystretch{1}
+
+
+%----------------------------------------------------------------------------------------
+%   Awards and Achievements
+%----------------------------------------------------------------------------------------
+%\section{Awards and Achievements}
+%
+%\itemlist {%
+%    \textsc{\small Nov 2017}    & Completed Data Analysis and Interpretation Specialization of \textbf{Weslyan University} from Coursera. \\
+%    \textsc{\small Oct 2016}    & Won \textbf{Junior Engineer Award} at Infogain for overall performance. \\
+%    \textsc{\small April 2016}  & Achieved a rank \textbf{5th} in Infogain’s Bootcamp Classroom Training \\
+%    \textsc{\small Jan 2012}    & Secured All India rank \textbf{28,300} in All India Engineering Entrance Exam (AIEEE) \\
+%  }
+
+%----------------------------------------------------------------------------------------
+%   OTHER SKILLS
+%----------------------------------------------------------------------------------------
+
+%\section {Leadership Skills}
+
+%\skill
+%    {2014 - 2015}
+%    {Chief Election Officer, Election Council, IIT Kanpur}
+
+%\skill
+%    {2014 - 2015}
+%    {Head, Major Events and Competitions, Antaragni '14}
+
+% \gitproject
+%     {2014 - 2015}
+%     {Head, Major Events and Competitions, Antaragni '14}
+%     {%
+%         \begin{itemize}[leftmargin=\bulletspace{}]
+%             \item Orchestrated Roadtrip --- the National Campaign of Antaragni '14, under which national
+%                 prelims for Nukkad, Dance, Quiz and Synchronicity were held in Pune, Mumbai, Chennai,
+%                 Bangalore, Chandigarh, Bhopal, Lucknow, Kolkata, and Kanpur.
+%             \item Negotiated with leading academies of Dance, Musicals, and Fine Arts to provide mentorships,
+%                 and other non-monetary incentives to the outstanding cultural performers in Antaragni
+%                 under the banner of \textbf{Dream On} campaign.
+%             \item Coordinated the conduction of \textbf{fifty competitions and nine major events} with a team
+%                 comprising of over \textbf{thousand volunteers}.  Initiated and organized Mr. \& Ms. Fresher's
+%                 competition and introduced Chreo Night in Antaragni's arsenal of competitions.
+%             \item Organized a \textbf{blood donation camp} for the residents of IIT Kanpur to promote awarness
+%                 about road accidents.  Mobilized information about \textbf{road safety} through infographics
+%                 and questionnaires via Antaragni's nation wide social campaign \textbf{Zara Sambhal Ke}.
+%         \end{itemize}
+%     }
+
+%\skill
+%    {2013 -- 2014}
+%    {Editor-in-chief, Vox Populi, the campus newsletter.}
+
+%\skill
+%    {2012 -- 2013}
+%    {Senator, Students' Senate, IITK Y11 batch.}
+
+% \gitproject
+%     {2014 - 2015}
+%     {Chief Election Officer, Election Council, IIT Kanpur}
+%     {%
+%         \begin{itemize}[leftmargin=\bulletspace{}]
+%             \item Conducted General Elections, Student's Gymkhana 2014 and
+%                 Girls Representative Elections, Students' Gymkhana 2014.
+%             \item Developed a new voting software from ground up to cater to the needs of IIT Kanpur.
+%         \end{itemize}
+%     }
+
+% \gitproject
+%     {2013 -- 2014}
+%     {Hospitality Coordinator, Antaragni '13}
+%     {%
+%         \begin{itemize}[leftmargin=\bulletspace{}]
+%             \item Managed a team of \textbf{40 secretaries and 80 volunteers}, over a span of 8 months and ensured a
+%                 flawless conduction of the festival.
+%             \item Chalked out the logistics of \textbf{hospitality and accommodation} of \textbf{1500 participants}
+%                 with four other coordinators.  Handled security arrangements during the four days of the
+%                 Festival from 24$^{th}$ to 27$^{th}$ October.
+%         \end{itemize}
+%     }
+
+% \skill
+%     {2013 -- 2014}
+%     {Member, Gymkhana Review Committee}
+
+%----------------------------------------------------------------------------------------
+%   COMMUNITY SERVICE
+%----------------------------------------------------------------------------------------
+
+%\section{Volunteer Work}
+%
+%\gitproject
+%    {2014 -- 2015}
+%    {Member, Institute Anti Ragging Committee}
+%    {%
+%        \begin{itemize}[leftmargin=\bulletspace{}]
+%            \item Appointed as a member of the Institute Anti Ragging Committee,responsible for welfare of the newly admitted freshmen.
+%            \item Worked with the office of the Dean of Student Affairs, to organize sessions on \textbf{easing the transition of freshmen}.
+%        \end{itemize}
+%    }
+%
+%\cproject
+%    {2013 -- 2014}
+%    {Tutor, English Proficiency Programme}
+%    {Professor Bhaskar Das Gupta}
+%    {}
+%    {%
+%        \begin{itemize}[leftmargin=\bulletspace{}]
+%            \item Worked as a \textbf{English tutor} in the pilot English Proficiency Programme to help
+%                \textbf{under-privileged students} obtain a functional knowlege of English.
+%        \end{itemize}
+%    }
+
+
+%----------------------------------------------------------------------------------------
+%   EXTRA-CURRICULAR ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+% \section{Extra-Curricular Activities}
+%
+% \skill {\href{srijanshetty.quora.com} {[Blog]}}
+%        {Sporadic blogger at \href{srijanshetty.in} {srijanshetty.in}}
+%
+% \gitproject
+%     {\href{https://github.com/navya} {\small{[Site]}}}
+%     {Hacker, Navya, FOSS Group IIT Kanpur}
+%     {%
+%         \begin{itemize}[leftmargin=\bulletspace{}]
+%             \item Promoted the \textbf{FOSS initiative} in campus by organizing \textbf{student lectures} and meet-ups.
+%             \item Built student-centric applications like \textbf{Course Search and Student Search}, to circumvent
+%                 their legacy institute counterparts.
+%         \end{itemize}
+%     }
+%
+% \skill
+%     {\href{https://github.com/srijanshetty} {\small{[GitHub]}}}
+%     {Active contributor to numerous open source projects}
+
+\end{document}
